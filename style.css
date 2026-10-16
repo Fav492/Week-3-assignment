@@ -1,0 +1,302 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+}
+body{
+     background-color:black;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     min-height:100vh;
+     display:flex;
+     justify-content:center;
+}
+
+
+.container{
+     display:flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     padding:20px;
+     gap: 100px;
+}
+
+.card-1{
+     display:flex;
+     flex-direction:column;
+     flex:1;
+     border:1px solid rgb(132, 130, 130);
+     border-radius:10px;
+     width:480px;
+     height:800px;
+     background-color:rgb(255, 255, 255);
+     color: black;
+}
+
+.image img{
+     width:100%;
+     height:400px;
+     object-fit:cover;
+     border: none;
+     border-radius:10px;
+}
+.highlight{
+     display: inline-block;
+     background-color: red;
+     transform:rotate(15deg);
+     font-size: 0.5rem;
+     position:absolute;
+     top: 48px;
+     left: 53%;
+     text-transform: uppercase;
+     font-weight: 600;
+}
+.info{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin:20px;
+}
+h2{
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+}
+.features{
+     font-size: 1.1rem;
+     margin-bottom: 10px;
+     font-weight:600;
+}
+ul{
+     margin-bottom: 40px;
+}
+ul li{
+     list-style: none;
+     font-size: 0.8rem;
+     
+}
+.price{
+     font-size: 1.2rem;
+     font-weight: 600;
+     margin-bottom: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgb(75, 51, 23);
+}
+.btn{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 70px;
+     background-color: rgb(75, 51, 23);
+     border-radius: 5px;
+     cursor:pointer;
+}
+.select-input{
+     display:none;
+}
+.select-btn{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 100%;
+     color:white;
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     cursor:pointer;
+}
+.btn:hover{
+     background-color: rgb(75, 51, 23);
+}
+.btn:hover .select-btn{
+     color: rgb(255, 255, 255);
+}
+.select-btn .selected-text{
+     display:none;
+     background-color: green;
+     width: 100%;
+     height: 100%;
+     justify-content:center;
+     text-transform: capitalize;
+     text-align: center;
+     cursor: pointer;
+     padding: 15px;
+}
+.btn .select-input:checked + .select-btn .default-text{
+     display:none;
+}
+.btn .select-input:checked + .select-btn .selected-text{
+     display:block;
+}
+.btn .select-input:checked + .select-btn{
+     background-color: rgb(75, 51, 23);
+}
+.btn .select-input:checked + .select-btn:hover{
+     background-color: rgb(75, 51, 23);
+}
+.btn .select-input:checked + .select-btn:hover .selected-text{
+     display:block;
+}
+.btn .select-input:checked + .select-btn:hover .default-text{
+     display:none;
+}
+.btn .select-input:checked + .select-btn .selected-text{
+     display:block;
+}
+
+.card-2{
+     display:flex;
+     flex-direction:column;
+     flex:1;
+     border:1px solid rgb(132, 130, 130);
+     border-radius:10px;
+     width:480px;
+     height:800px;
+     background-color:rgb(255, 255, 255);
+     color: black;
+}
+.discount{
+     display: inline-block;
+     color:black;
+     font-size: 0.5rem;
+}
+
+.button{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 70px;
+     background-color: rgb(75, 51, 23);
+     border-radius: 5px;
+     cursor:pointer;
+}
+.slt-input{
+     display:none;
+}
+.slt-btn{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 100%;
+     color:white;
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     cursor:pointer;
+}
+.button:hover{
+     background-color: rgb(75, 51, 23);
+}
+.button:hover .slt-btn{
+     color: rgb(255, 255, 255);
+}
+.slt-btn .sltd-text{
+     display:none;
+     background-color: green;
+     width: 100%;
+     height: 100%;
+     justify-content:center;
+     text-transform: capitalize;
+     text-align: center;
+     cursor: pointer;
+     padding: 15px;
+}
+.button .slt-input:checked + .slt-btn .dft-text{
+     display:none;
+}
+.button .slt-input:checked + .slt-btn .sltd-text{
+     display:block;
+}
+.button .slt-input:checked + .slt-btn{
+     background-color: rgb(75, 51, 23);
+}
+.button .slt-input:checked + .slt-btn:hover{
+     background-color: rgb(75, 51, 23);
+}
+.button .slt-input:checked + .slt-btn:hover .sltd-text{
+     display:block;
+}
+.button .slt-input:checked + .slt-btn:hover .dft-text{
+     display:none;
+}
+.button .slt-input:checked + .slt-btn .sltd-text{
+     display:block;
+}
+
+.card-3{
+     display:flex;
+     flex-direction:column;
+     flex:1;
+     border:1px solid rgb(132, 130, 130);
+     border-radius:10px;
+     width:480px;
+     height:800px;
+     background-color:rgb(255, 255, 255);
+     color: black;
+}
+.btn-a{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 70px;
+     background-color: rgb(75, 51, 23);
+     border-radius: 5px;
+     cursor:pointer;
+}
+.selt-input{
+     display:none;
+}
+.selt-btn{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     height: 100%;
+     color:white;
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     cursor:pointer;
+}
+.btn-a:hover{
+     background-color: rgb(75, 51, 23);
+}
+.btn-a:hover .selt-btn{
+     color: rgb(255, 255, 255);
+}
+.selt-btn .seltd-text{
+     display:none;
+     background-color: green;
+     width: 100%;
+     height: 100%;
+     justify-content:center;
+     text-transform: capitalize;
+     text-align: center;
+     cursor: pointer;
+     padding: 15px;
+}
+.btn-a .selt-input:checked + .selt-btn .deflt-text{
+     display:none;
+}
+.btn-a .selt-input:checked + .selt-btn .seltd-text{
+     display:block;
+}
+.btn-a .selt-input:checked + .selt-btn{
+     background-color: rgb(75, 51, 23);
+}
+.btn-a .selt-input:checked + .selt-btn:hover{
+     background-color: rgb(75, 51, 23);
+}
+.btn-a .selt-input:checked + .selt-btn:hover .seltd-text{
+     display:block;
+}
+.btn-a .selt-input:checked + .selt-btn:hover .deflt-text{
+     display:none;
+}
+.btn-a .selt-input:checked + .selt-btn .seltd-text{
+     display:block;
+}
